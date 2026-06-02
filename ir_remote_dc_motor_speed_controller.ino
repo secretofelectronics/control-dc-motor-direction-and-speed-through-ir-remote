@@ -9,7 +9,7 @@
 #define IR_UP      0xF10EFF00
 #define IR_DOWN    0xE51AFF00
 #define IR_POWER   0xF609FF00
-#define IR_REVERSE 0x
+#define IR_REVERSE 0xE11EFF00
 
 int speedLevel = 0;
 bool motorState = false;
@@ -62,7 +62,6 @@ void loop()
 
     IrReceiver.resume();
   }
-  delay(1000);
 }
 
 void updateMotor()
